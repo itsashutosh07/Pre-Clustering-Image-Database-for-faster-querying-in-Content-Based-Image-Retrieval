@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clustering In CBIR</title>
+    <link rel="stylesheet" href="{% static "reviews/style.css" %}" />
+  </head>
+  <body>
+    <h1>
+      Pre-Clustering Image Database for faster querying in Content Based Image
+      Retrieval
+    </h1>
+    <br />
+    <h2>Problem Statement :</h2>
+    <p>
+      Given a database of images and a query image, retrieve images from the
+      database which are similar to the query image along with some metric of
+      similarity. Improve the algorithm in order to reduce time for processing
+      each query.
+    </p>
+    <br />
+    <h2>Form:</h2>
+    <div id="form-inp">
+      <!-- <form method="post"> -->
+      <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <!-- <strong> -->
+        <label for="fileBtn">Choose a query image file :</label>
+        <input
+          type="file"
+          class="inp"
+          id="fileBtn"
+          name="image"
+          required
+          placeholder="Upload File"
+        />
+        <br />
+        <br />
+        <label for="queryNo">Select the no. of images to fetch:</label>
+        <input
+          type="number"
+          min="1"
+          max="15"
+          id="queryNo"
+          class="inp"
+          name="queryNo"
+          placeholder="1-15"
+          autofocus
+        />
+        <!-- </strong> -->
+        <br />
+        <br />
+        <button type="submit" id="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+

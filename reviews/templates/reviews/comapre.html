@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" href="{% static "reviews/style.css" %}" />
+  </head>
+  <body>
+    <h1>
+      Pre-Clustering Image Database for faster querying in Content Based Image
+      Retrieval
+    </h1>
+    <br />
+    <h2>Result :</h2>
+    <p>
+      Here are the "<strong
+        ><span style="color: darkorange">{{ queryNum }}</span></strong
+      >" images most relevent to the qwery image.
+    </p>
+    <br />
+    <h3>Relevant Images :</h3>
+    <div id="imgField">
+      <!-- <img src="banana.jpg" alt="1" /> -->
+      
+      {% for i in newRes %}
+      <div class="resImageDiv">
+        <img src="{% static i.0 %}" alt="img">
+        <p class="resImageSpan">
+          Factor:{{ i.1 }}
+        </p>
+      </div>
+      {% endfor %}
+      
+    </div>
+    <br />
+    <h3>Statistical Comparison :</h3>
+    <div id="stat">
+      <!-- <p>Hello</p> -->
+      <table>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Parameter</th>
+          <th>Previous Methords</th>
+          <th>Our Methord</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Query Time</td>
+          <td>{{ oTime }} sec</td>
+          <td>{{ nTime }} sec</td>
+        </tr>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>% Improvement</td>
+          <td> -- </td>
+          <td>{{ improv }}%</td>
+        </tr>
+      </table>
+      <!-- <span class="compare">
+        <p>Our Methord</p>
+      </span>
+      <span class="compare">
+        <p>HELLO</p>
+      </span> -->
+    </div>
+  </body>
+</html>
