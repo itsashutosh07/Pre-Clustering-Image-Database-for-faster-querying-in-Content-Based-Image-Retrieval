@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Dosis&family=EB+Garamond&family=Inconsolata&family=La+Belle+Aurore&family=Libre+Baskerville&family=Martian+Mono&family=Merriweather&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Raleway:ital,wght@0,500;1,400&family=Slabo+27px&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(255, 254, 247);
+  padding: 1% 13.5%;
+  font-size: 19px;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 900;
+  font-weight: 900;
+  font-style: italic;
+  margin: 25px 0px 50px;
+  /* padding-bottom: 10px; */
+}
+h2 {
+  /* color: rgba(248, 248, 255, 0.899); */
+  font-size: 35px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+p {
+  padding-top: 20px;
+}
+#form-inp {
+  background-color: rgb(240, 255, 255);
+  border-style: solid;
+  border-color: aqua;
+  border-width: 1px 1px 1px 10px;
+  border-radius: 0px 50px 50px 0px;
+  padding: 3% 20%;
+  margin: 0.6% 0%;
+}
+.inp {
+  align-items: center;
+  float: right;
+}
+#queryNo {
+  margin-right: 193px;
+  padding-left: 38px;
+  padding-right: 0px;
+}
+button {
+  font-family: "Raleway", sans-serif;
+  float: right;
+  margin-right: 50%;
+  padding: 3px 10px;
+}
+input {
+  font-family: "Raleway", sans-serif;
+  padding: 3px 5px;
+}
+#submit {
+  font-size: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: rgb(0, 255, 225);
+  background-color: rgb(200, 255, 250);
+}
+img {
+  display: inline-block;
+  justify-content: center;
+  border: 0.1px solid black;
+  width: 18.286997rem;
+  height: 18.286997rem;
+  object-fit: fill;
+  /* object-fit: cover; */
+  /* max-width: 30%; */
+  margin: 1.47%;
+}
+img:hover {
+  border: 0.1px solid deeppink;
+}
+#imgField {
+  align-items: flex-start;
+  justify-content: center;
+  border-style: solid;
+  border-color: deeppink;
+  background-color: rgb(255, 245, 251);
+  border-width: 1px 1px 1px 10px;
+  border-radius: 0px 50px 50px 0px;
+  /* max-width: 18.2969987rem; */
+  padding: 40px;
+  margin: 20px 0px;
+}
+.resImageDiv {
+  display: inline-block;
+  text-align: center;
+  width: 18.2969987rem;
+  margin: 1.47%;
+}
+.resImageDiv:hover {
+  text-decoration: double;
+  color: deeppink;
+}
+.resImageDiv img {
+  display: inline-block;
+  margin: 0 0;
+}
+.resImageSpan {
+  padding: 0px;
+  margin-bottom: 6%;
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  /* border: 1px solid; */
+  text-align: left;
+  padding: 2px;
+}
+#stat {
+  font-size: 17px;
+  justify-content: center;
+  border-style: solid;
+  border-color: greenyellow;
+  background-color: rgb(249, 255, 240);
+  border-width: 1px 1px 1px 10px;
+  border-radius: 0px 50px 50px 0px;
+  padding: 20px;
+  margin: 20px 0px;
+  display: block;
+  justify-content: center;
+}
+.compare {
+  display: inline-block;
+  /* border: 5px solid blue; */
+  width: 49%;
+  text-align: center;
+}
+/* body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+div {
+  flex-basis: 45%;
+  margin-top: 20px;
+} */
